@@ -6,5 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>表单标签的格式</title>
   </head>
-  <body></body>
+  <body>
+    姓名：<input type="text" />
+    <br />
+    密码：<input type="password" />
+    <br />
+    <input type="radio" name="sex" id="nan" /> <label for="nan">男 </label>
+    <label> <input type="radio" name="sex" />女 </label>
+    <input type="checkbox" name="like" id="meibv" /><label for="meibv">
+      <div><span>dsga</span></div>
+    </label>
+    <label> <input type="checkbox" name="like" checked />有用 </label>
+    <form>
+      <!-- form表单域是配合按钮去提交的 -->
+      姓名：<input type="text" />
+      <br />
+      密码：<input type="password" />
+      <br />
+      <!-- <button type="reset"></button> -->
+      <input type="reset" />
+      <input type="submit" />
+      <label for="meibv"> 默认提交</label>
+    </form>
+    <select>
+      <option>本经</option>
+      <option selected>奶奶</option>
+    </select>
+  </body>
 </html>
