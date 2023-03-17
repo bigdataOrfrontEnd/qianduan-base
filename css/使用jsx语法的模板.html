@@ -9,7 +9,22 @@
     <script src="../js//react.development.js"></script>
     <script src="../js/react-dom.development.js"></script>
     <script src="../js/babel.min.js"></script>
-    <style></style>
+    <style>
+      a {
+        display: inline-block;
+        height: 50px;
+        width: 100px;
+        text-decoration: none;
+        background-color: red;
+        margin-right: 5px;
+        line-height: 50px;
+        text-align: center;
+        color: azure;
+      }
+      a:hover {
+        background-color: blue;
+      }
+    </style>
   </head>
   <body>
     <div id="app"></div>
@@ -17,7 +32,14 @@
   <script type="text/babel">
     let app = document.querySelector("#app");
     let root = ReactDOM.createRoot(app);
-    let element = <div></div>;
+    let element = (
+      <div>
+        <a href="#">导航1</a>
+        <a href="#">导航2</a>
+        <a href="#">导航3</a>
+        <a href="#">导航4</a>
+      </div>
+    );
     root.render(element);
   </script>
 </html>
