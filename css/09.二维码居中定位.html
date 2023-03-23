@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>二维码案例</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      .nav {
+        width: 1200px;
+        margin: 50px auto;
+      }
+      .nav li {
+        float: left;
+      }
+      .nav li a {
+        display: block;
+        padding: 0 60px;
+        height: 40px;
+        border: 1px solid #ddd;
+        text-align: center;
+        line-height: 40px;
+        color: black;
+      }
+      /* 使用伪元素清除浮动 */
+      /* .nav ul:after {
+        content: "";
+        display: block;
+        clear: both;
+      } */
+
+      .image {
+        position: absolute;
+
+        width: 140px;
+        height: 200px;
+        background-color: #ddd;
+        text-align: center;
+        line-height: 200px;
+      }
+      .image img {
+        vertical-align: middle;
+      }
+      .app {
+        position: relative;
+      }
+      img {
+        display: none;
+        position: absolute;
+        left: 50%;
+        top: 40px;
+        transform: translate(-50%);
+      }
+      .app:hover img {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <ul>
+        <li><a href="#">先任务</a></li>
+        <li><a href="#">商城 </a></li>
+        <li><a href="#">手机显示</a></li>
+        <li class="app">
+          <!-- 造成了文字和图片排列的问题，图和字排序的乱七八糟，所以需要使用定位 -->
+          <a href="#"
+            >先任务
+            <img src="../images/code.jpg" alt="" />
+          </a>
+        </li>
+        <li><a href="#">先任务</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
