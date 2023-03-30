@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>样式属性</title>
+    <style>
+      .one {
+        width: 100px;
+        height: 200px;
+        background-color: antiquewhite;
+      }
+      .two {
+        width: 400px;
+        height: 100px;
+        background: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one"></div>
+  </body>
+  <script>
+    let div = document.querySelector("div");
+    // div.style.width = "500px";
+    // div.className = "two";
+    div.classList.add("two");
+  </script>
+</html>

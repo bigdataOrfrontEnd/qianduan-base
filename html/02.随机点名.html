@@ -6,5 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>随机点名</title>
   </head>
-  <body></body>
+  <body>
+    <div class="main">
+      <h1>姓名：</h1>
+      <span></span>
+    </div>
+    <script>
+      //1.获取要渲染的节点
+      let sparn = document.querySelector("span");
+      //js函数处理---获取随基数
+      function ranRom(min, max) {
+        return Math.ceil(Math.random() * (max - min + 1) + min);
+      }
+      //   console.log(ranRom(0, 10));
+      let ram = ranRom(0, 10);
+      console.log(ram);
+      //后端来的数据
+      let arr = ["1", "2", "3", "4", "6", "7", "8", "9", "11", "10", "14"];
+      //2. 修改ranRom(0, 10)
+      sparn.innerHTML = arr[ram];
+    </script>
+  </body>
 </html>
